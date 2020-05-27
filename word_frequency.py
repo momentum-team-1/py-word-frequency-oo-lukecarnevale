@@ -87,7 +87,7 @@ class FreqPrinter:
        rights | 6    ******
         right | 6    ******
         """
-        self.word_freqs = sorted(self.word_freqs.items(),
+        self.word_freqs = sorted(self.word_freqs.item(),
         key= self.seq,
         reverse=True)
         words_to_display = [freq[0] for freq in self.freqs[:10]]
